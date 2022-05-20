@@ -137,8 +137,9 @@ def start(night):
     camera()
 
 def main():
+    answer = print(input("Enter the night you are on: "))
     begin = time.time()
-    start(7)
+    start(answer)
     insideCams()
     while(time.time()<begin + 500):
         lookCams()
